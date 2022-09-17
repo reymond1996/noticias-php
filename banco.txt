@@ -1,0 +1,24 @@
+create database tr_bd_cadastro;
+use tr_bd_cadastro;
+
+
+create table usuario(
+id		int primary key auto_increment,
+nome	varchar(80),
+email	varchar(120),
+login	varchar(60),
+senha	varchar(120)
+
+);
+
+insert into usuario(id,nome,email,login,senha) 
+values(null,'Ramon Costa','ramoncosta@ig.com','ramon',md5('123'));
+
+select * from usuario;
+
+create table info(
+id		int primary key auto_increment,
+dataInfo	date
+);
+
+select * from info;
